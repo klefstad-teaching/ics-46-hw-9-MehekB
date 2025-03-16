@@ -44,7 +44,7 @@ vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& prev
 }
 
 void print_path(const vector<int>& v, int total) {
-    if (v.empty()) {
+    if (total == INF) {
         cout << "No path found\n";
         return;
     }
