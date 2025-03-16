@@ -45,13 +45,13 @@ vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& prev
 
 void print_path(const vector<int>& v, int total) {
     if (total == INF) {
-        cout << "No path found\n";
+        cout << "No path found";
         return;
     }
 
     for (size_t i = 0; i < v.size(); ++i) {
         cout << v[i];
-        if (i < v.size() - 1) cout << " ";
+        cout << " ";
     }
-    cout << " \nTotal cost is " << total << endl;
+    cout << "\nTotal cost is " << total << endl;
 }
