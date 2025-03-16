@@ -120,6 +120,7 @@ void print_word_ladder(const vector<string>& ladder) {
 }
 
 // Verifies the word ladder generation
+#define my_assert(e) {cout << #e << ((e) ? " passed" : " failed") << endl;}
 void verify_word_ladder() {
     set<string> word_list;
     load_words(word_list, "words.txt");
